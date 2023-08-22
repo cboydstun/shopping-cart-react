@@ -15,6 +15,7 @@ export const Cart = () => {
   const paypalRef = useRef();
   const paypalButtonRef = useRef(null); // Reference to store the PayPal button instance
 
+
   useEffect(() => {
     if (window.paypal && totalAmount > 0 && !paypalButtonRef.current) {
       paypalButtonRef.current = window.paypal.Buttons({
